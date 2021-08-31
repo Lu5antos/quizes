@@ -1,0 +1,158 @@
+Navigating the File System
+1.  How do you move back and forth between directories?
+Change directories witht the cd command.(cd, cd.., cd ../../)
+
+2.  How do you create and delete files?
+You create files with the touch command followed by the name of the file. You remove files with the rm command followed by the name of the file. 
+
+3.  How do you create and delete directories?
+create = mkdir[filename]. delete = rmdir [filename]
+
+
+GIT 
+1.  How do you let git know you want to track changes made in a directory?
+git init
+
+2.  How do you tell git that you like the work you’ve done and want it to be a part of a chunk of work to be saved?
+git status to check file has been altered and git add to add that file. Git add . will add all altered files.
+
+3.  How do you tell git you want to save a chunk of work?
+after adding it to the staging area with git add, use git commit with -m"" with a short description of the changes youve made.
+
+4.  How do you tell git where to push your local changes up to a online repository?
+git remote add origin [github url]
+git push -u origin main
+
+5.  How can you safely work on a different version of your current project?
+create a branch and then checkout to the branch.
+you can git branch [branch[ then git checkout[branch] or you can git checkout -b[branch] which does both in one command.
+
+6.  How can you make that different version become a part of your main version
+after committing and saving that branch, checkout to the main branch and use the git [merge] command to pull it into the main branch
+
+7.  How do I move between versions of my project?
+git checkout[branch]
+
+8.  How can I go back to previous chunks of work that I’ve created and work from that point in time?
+you can checkout to the branch that you were on and go work on it or you can git revert 
+
+9.  Let’s say I wrote a bad message for a commit. How could I change it?
+go back to the repository that containts the commit you would like to change and use git commit --amend
+
+Python
+1.  How do I run my code from the terminal?
+navigate to the file containing the code you want to run. use python[version] [filename]
+
+2.  What can I use to reference a value later in my code?
+a variable
+
+3.  How can I make my program display text or some value in my terminal?
+print()
+
+4.  How can I make my code make decisions on which code to execute?
+conditional statments
+
+5.  How can I repeat blocks of code based on conditions?
+loops
+
+6.  Why is it critical to ensure that our conditions eventually become false when repeating blocks of code?
+you risk creating an infinite loop. not fun. 
+
+7.  What are sequences and what are the differences between them?
+sequence is a term for an ordered set. It means that the order in which you input the otems will be the same when you access them
+string = characters within quotes
+list = collection of numbers, strings, lists, tuples, dictionaries, objs in []... seperated by a comma, and are mutable
+tuple = similar to list but are surrounded by () and are immutable
+
+8.  How do I access a value within the various types of sequences?
+by index, which starts at 0. You can also slice which uses indexes as well
+
+9.  What is an index when talking about sequences?     0        1         2
+the position of an item within that sequence. lst = ["hello", "world", "python"]
+
+10. What is the index of the first value within a sequence?
+0
+
+11. How can I add or remove a value from a sequence?
+tuples: are immutable but you can create new tuples from existing tuples.
+list/string: you can change the value of an existing index. ex. mylist[2]= new value 
+you can use .appen() or .pop() as well 
+
+12. What is the index of the last value within a sequence?
+list[-1]
+
+13. How can I get the length of a sequence?
+len(sequence)
+
+14. What can I use to reference and use a block of code later in my code?
+functions/methods
+
+15. What is DRY?
+dont repeat yourself. write concise and clean code
+
+16. What is Scope? Provide an example.
+the space in which a code exist, marked by indentation in python
+ex. def greeting(name):
+    print(f"Hello {name}")
+the print statments exists only within the greeting function
+
+17. What is the difference between parameters and arguments?
+you define parameters within your function definition and then you pass in values for those parameter which are arguments.
+
+18. What is recursion?
+ a function that calls itself like a loop.
+
+19. How can you return a value from a function?
+use the return statment
+ex. 
+def add_nums(num1,num2):
+    return num + num2
+
+20. Describe a dictionary. How and why would it be useful?
+key:value paires stored within a variable. It is useful for storing data sets.
+
+21. How can you remove a value from a dictionary?
+you can use .pop([key]) or the del keyword [dict item]
+
+22. How can you access and change values within a dictionary?
+access it using dict[] and then reassign it using =
+
+23. What data types can a sequence hold?
+any.
+
+24. What data types can a dictionary hold?
+any. 
+
+25. How can you iterate through a dictionary?
+you can use for loops. the value() and items() methods could come in handing depending on what you want to do.
+
+26. What is object oriented programming?
+A way of programming that models real world objects rather than functions and logic
+
+27. Describe a class? Why are they useful?
+a class is like the blueprint for and obj you want to create. It is useful for when you want to create multiple objects.
+You can take that original blueprint and create instances of it instead of rewrite new objs.
+
+28. What are class properties? How would I give a class an initial set of properties?
+properties are like attributes..characteristics of that class. "What makes this class a class?"
+class Student:
+    def __init__(self, name, age)
+        self.name = name
+        self.age = age
+
+29. What are class methods?
+functions within a class
+
+30. What is inheritence?
+One of the four pillars of OOP. It allows one class to inherit attributes from other classes.
+
+
+Message web-ft-08-2021-cor
+
+
+
+
+
+
+
+
